@@ -1,5 +1,10 @@
 *.log
 wp-config.php
+sitemap.xml
+sitemap.xml.gz
+*.log
+
+wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
@@ -10,6 +15,21 @@ wp-content/uploads/
 wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+
+
+# Don’t ignore plugins dir, but ignore everything inside
+!/wp-content/plugins
+/wp-content/plugins/*
+
+# Don’t ignore themes dir, but ignore everything inside
+!/wp-content/themes
+/wp-content/themes/*
+
+# Don’t ignore twentynineteen-child theme
+!/wp-content/themes/twentynineteen-child
+
+# Don’t ignore wp-user-testimonials plugin
+!/wp-content/plugins/wp-user-testimonials
 
 /.htaccess
 /license.txt
